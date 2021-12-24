@@ -3,9 +3,14 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-               echo "checkour code freom git"
+                echo "checkout code from git"
             }
         }
+    stage("test"){
+        steps{
+               echo " code testinng has started "
+               echo " code testing finished "
+             }
+         }
     }
  }
-       
